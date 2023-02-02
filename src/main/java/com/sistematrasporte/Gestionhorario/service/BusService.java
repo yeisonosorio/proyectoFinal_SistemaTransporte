@@ -19,4 +19,19 @@ public class BusService implements IBusService {
     public List<Bus> obtenerBuses() {
         return null;
     }
+
+    @Override
+    public void registrarBus(Bus bus) {
+
+    }
+
+    @Override
+    public void modificarBus(Bus bus) {
+
+    }
+
+    @Override
+    public void eliminarBus(String idBus) {
+
+    }
 }
