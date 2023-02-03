@@ -3,19 +3,19 @@
 
 
 ## Documentación de Proyecto Sistema de Transporte - README.md
-La aplicación Sistema de Trasporte tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero que extiende de Persona y una clase 
+La aplicación Sistema de Trasporte tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero y una clase 
 RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y métodos específicos.
 
 La clase Bus almacenará información sobre el bus, como su identificador y sus características. La clase Destino almacenará información sobre el destino, como su id y nombre. La clase Pasajero almacenará información sobre los pasajeros que viajan en el autobús, como su nombre y documento. La clase RegistroViaje será la clase principal de la aplicación y almacenará información sobre el viaje en sí, como la fecha y hora del viaje, el autobús y los pasajeros que viajan en él, se tomaron fecha y hora por aparte por si en algun momento se quiere cambiar la hora de salida del bus no se tenga que cambiar la fecha.
 
 
-- Desde la BusController podemos realizar el registro de buses y actualizacion,  eliminacion y ver la lis de los Buses o verlos por id
+- Desde el BusController podemos realizar el registro de buses y actualizacion,  eliminacion y ver la lista de los Buses o verlos por id
 
-- Desde la DestinoControllador podemos realizar el registro de destinos y actualizacion,  eliminacion y ver los destinos
+- Desde el DestinoControllador podemos realizar el registro de destinos y actualizacion,  eliminacion y ver los destinos
 
-- Desde la PasajeroController podemos realizar el registro de pasajeros y actualizacion,  eliminacion y ver los datos del pasajero
+- Desde el PasajeroController podemos realizar el registro de pasajeros y actualizacion,  eliminacion y ver los datos del pasajero
 
-- Desde la RegistroViajeController podemos realizar el registroViaje de buses y actualizacion,  eliminacion y ver los datos de los registros de viajes
+- Desde el RegistroViajeController podemos realizar el registroViaje de buses y actualizacion,  eliminacion y ver los datos de los registros de viajes
 
 Patron de Diseño Identificado
 
@@ -52,7 +52,7 @@ Patron de Diseño Identificado
 
 ## Bus Contronller
 ---
-##Ensdpoints a probar.
+##Endpoints a probar.
 --
 --Post
 
@@ -98,6 +98,7 @@ Patron de Diseño Identificado
   
 ## Destino Controller
 ---
+##Endpoints a probar.
 
 --Post
 
@@ -136,7 +137,7 @@ Patron de Diseño Identificado
 
 ### Pasajero Controller
 ---
-##Ensdpoints a probar.
+##Endpoints a probar.
 
 --Post
 
