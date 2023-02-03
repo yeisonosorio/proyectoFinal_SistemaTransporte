@@ -1,6 +1,7 @@
 package com.sistematrasporte.Gestionhorario.service;
 
 
+import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.RegistroViaje;
 import com.sistematrasporte.Gestionhorario.repository.RegistroViajeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +32,13 @@ public class RegistroViajeService implements IRegistroViajeService {
         registroViajeRepository.actualizarRegistroViaje(registroViaje);
     }
 
-
     @Override
     public void eliminarRegistroViaje(String id) {
         registroViajeRepository.eliminarViaje(id);
+    }
+
+    @Override
+    public Bus obtenerRegistroViajeId(String id) {
+        return obtenerRegistroViajeId(id);
     }
 }

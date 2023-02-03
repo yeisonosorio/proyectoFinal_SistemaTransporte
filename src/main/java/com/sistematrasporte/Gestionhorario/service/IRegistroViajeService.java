@@ -1,5 +1,6 @@
 package com.sistematrasporte.Gestionhorario.service;
 
+import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.RegistroViaje;
 
 import java.util.List;
@@ -15,4 +16,6 @@ public interface IRegistroViajeService {
 
 
     void eliminarRegistroViaje(String id);
+
+    Bus obtenerRegistroViajeId(String id);
 }

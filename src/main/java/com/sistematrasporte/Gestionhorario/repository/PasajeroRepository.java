@@ -3,10 +3,12 @@ package com.sistematrasporte.Gestionhorario.repository;
 import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.Pasajero;
 import com.sistematrasporte.Gestionhorario.models.Persona;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Repository
 public class PasajeroRepository {
 
 

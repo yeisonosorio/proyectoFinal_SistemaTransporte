@@ -1,5 +1,6 @@
 package com.sistematrasporte.Gestionhorario.repository;
 
+import com.sistematrasporte.Gestionhorario.models.Pasajero;
 import com.sistematrasporte.Gestionhorario.models.RegistroViaje;
 import org.springframework.stereotype.Repository;
 
@@ -22,12 +23,17 @@ public class RegistroViajeRepository {
         return this.registroViajes;
     }
 
+    public List<RegistroViaje> getRegistroViajes() {
+        return registroViajes;
+    }
+
     public void registrarViaje(RegistroViaje registroViaje) {
         registroViajes.add(registroViaje);
     }
 
     public void eliminarViaje(String id) {
-        registroViajes.remove(id);
+        registroViajes = registroViajes.stream().filter(viaje -> !viaje.getId().equals(id))
+                .collect(Collectors.toList());
     }
 
     public void actualizarRegistroViaje(RegistroViaje registroViaje) {
