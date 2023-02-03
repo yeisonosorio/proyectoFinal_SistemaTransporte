@@ -16,11 +16,6 @@ public class PasajeroController {
     private PasajeroService pasajeroService;
 
 
-    public PasajeroController(PasajeroService pasajeroService) {
-        this.pasajeroService = pasajeroService;
-    }
-
-
     @PostMapping
     public ResponseEntity<Pasajero> guardarPasajero(@RequestBody Pasajero pasajero) {
         pasajeroService.registrarPasajero(pasajero);

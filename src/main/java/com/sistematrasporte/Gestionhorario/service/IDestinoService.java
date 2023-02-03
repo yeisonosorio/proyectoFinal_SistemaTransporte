@@ -9,12 +9,12 @@ import java.util.List;
 public interface IDestinoService {
 
 
-    void registrarDestiono(Destino destino);
+    void registrarDestino(Destino destino);
 
     List<Destino> obtenerTodosLosDestinos();
 
 
-    void actualizarDestino(RegistroViaje viaje);
+    void actualizarDestino(Destino destino);
 
 
     void eliminarDestino(String id);

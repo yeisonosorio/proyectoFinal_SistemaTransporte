@@ -8,9 +8,8 @@ import java.util.List;
 public class DestinoService implements IDestinoService {
 
 
-
     @Override
-    public void registrarDestiono(Destino destino) {
+    public void registrarDestino(Destino destino) {
 
     }
 
@@ -20,7 +19,7 @@ public class DestinoService implements IDestinoService {
     }
 
     @Override
-    public void actualizarDestino(RegistroViaje viaje) {
+    public void actualizarDestino(Destino destino) {
 
     }
 

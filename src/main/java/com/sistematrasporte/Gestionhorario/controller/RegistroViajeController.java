@@ -17,9 +17,7 @@ public class RegistroViajeController {
     @Autowired
     private RegistroViajeService registroViajeService;
 
-    public RegistroViajeController(RegistroViajeService registroViajeService) {
-        this.registroViajeService = registroViajeService;
-    }
+
 
 
     @PostMapping
