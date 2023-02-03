@@ -29,16 +29,15 @@ public class PasajeroController {
     }
 
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarPasajero(@PathVariable String id) {
-        pasajeroService.eliminarPasajero(id);
-        return null;
-    }
-
     @PutMapping("/actua")
     public ResponseEntity<Void> actualizarPasajero(@RequestBody Pasajero pasajero) {
         pasajeroService.actualizarPasajero(pasajero);
         return null;
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminarPasajero(@PathVariable String id) {
+        pasajeroService.eliminarPasajero(id);
+        return null;
+    }
 }

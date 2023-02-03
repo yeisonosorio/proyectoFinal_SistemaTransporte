@@ -29,6 +29,11 @@ public class DestinoController {
         return new ResponseEntity(destinoService.obtenerTodosLosDestinos(), HttpStatus.FOUND);
     }
 
+    @PutMapping("/actua")
+    public ResponseEntity<Void> actualizarDestino(@RequestBody Destino destino) {
+        destinoService.actualizarDestino(destino);
+        return null;
+    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarDestino(@PathVariable String id) {
@@ -36,10 +41,5 @@ public class DestinoController {
         return null;
     }
 
-    @PutMapping("/actua")
-    public ResponseEntity<Void> actualizarDestino(@RequestBody Destino destino) {
-        destinoService.actualizarDestino(destino);
-        return null;
-    }
 
 }

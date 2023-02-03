@@ -19,14 +19,14 @@ public class RegistroViajeController {
 
 
     @PostMapping
-    public ResponseEntity<RegistroViaje> guardar(@RequestBody RegistroViaje registroViaje) {
+    public ResponseEntity<RegistroViaje> guardarViaje(@RequestBody RegistroViaje registroViaje) {
         registroViajeService.registrarViaje(registroViaje);
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
 
     @PutMapping("/actua")
-    public ResponseEntity<Void> actualizarBus(@RequestBody RegistroViaje registroViaje) {
+    public ResponseEntity<Void> actualizarViaje(@RequestBody RegistroViaje registroViaje) {
         registroViajeService.actualizarRegistroViaje(registroViaje);
         return null;
     }

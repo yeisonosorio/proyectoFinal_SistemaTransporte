@@ -1,7 +1,9 @@
 package com.sistematrasporte.Gestionhorario.repository;
 
+import com.sistematrasporte.Gestionhorario.controller.DestinoController;
 import com.sistematrasporte.Gestionhorario.models.Destino;
 import com.sistematrasporte.Gestionhorario.models.RegistroViaje;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -11,15 +13,12 @@ import java.util.stream.Collectors;
 @Repository
 public class DestinoRepository {
 
+
     private List<Destino> destinos;
 
 
-    public List<Destino> obtenerDestinos() {
-        return this.destinos;
-    }
-
     public List<Destino> getDestinos() {
-        return destinos;
+        return getDestinos();
     }
 
     public void registrarDestino(Destino destino) {

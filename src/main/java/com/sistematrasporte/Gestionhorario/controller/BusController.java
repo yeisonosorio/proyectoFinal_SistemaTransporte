@@ -45,15 +45,15 @@ public class BusController {
     }
 
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarBus(@PathVariable String id) {
-        busService.eliminarBus(id);
-        return null;
-    }
-
     @PutMapping("/actua")
     public ResponseEntity<Void> actualizarBus(@RequestBody Bus bus) {
         busService.actualizarBus(bus);
+        return null;
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> eliminarBus(@PathVariable String id) {
+        busService.eliminarBus(id);
         return null;
     }
 

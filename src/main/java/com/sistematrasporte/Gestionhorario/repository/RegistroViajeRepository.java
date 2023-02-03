@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 @Repository
 public class RegistroViajeRepository {
 
-
     private List<RegistroViaje> registroViajes;
+
 
     public RegistroViajeRepository() {
         this.registroViajes = new ArrayList<>();
