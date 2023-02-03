@@ -1,6 +1,3 @@
-# proyectoFinal_SistemaTransporte
-
-
 
 ## Documentación de Proyecto Sistema de Transporte - README.md
 La aplicación Sistema de Trasporte se desarollo una api en SpringBoot con Representational State Transfer (REST) tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero y una clase RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y métodos específicos.
