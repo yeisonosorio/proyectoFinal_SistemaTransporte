@@ -6,6 +6,23 @@
 La aplicación Sistema de Trasporte tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero que extiende de Persona y una clase 
 RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y métodos específicos.
 
+La clase Bus almacenará información sobre el bus, como su identificador y sus características. La clase Destino almacenará información sobre el destino, como su id y nombre. La clase Pasajero almacenará información sobre los pasajeros que viajan en el autobús, como su nombre y documento. La clase RegistroViaje será la clase principal de la aplicación y almacenará información sobre el viaje en sí, como la fecha y hora del viaje, el autobús y los pasajeros que viajan en él, se tomaron fecha y hora por aparte por si en algun momento se quiere cambiar la hora de salida del bus no se tenga que cambiar la fecha.
+
+
+- Desde la BusController podemos realizar el registro de buses y actualizacion,  eliminacion y ver la lis de los Buses o verlos por id
+
+- Desde la DestinoControllador podemos realizar el registro de destinos y actualizacion,  eliminacion y ver los destinos
+
+- Desde la PasajeroController podemos realizar el registro de pasajeros y actualizacion,  eliminacion y ver los datos del pasajero
+
+- Desde la RegistroViajeController podemos realizar el registroViaje de buses y actualizacion,  eliminacion y ver los datos de los registros de viajes
+
+Patron de Diseño Identificado
+
+- Patrón Singleton: Garantiza que una clase solo tenga una única instancia y proporciona un punto de acceso global a ella.
+- El patrón Representational State Transfer (REST)
+
+
 ## Los componentes clave de la aplicación son los siguientes:👇
 
 
@@ -39,40 +56,43 @@ RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y mé
 --
 --Post
 
-    http://localhost:8080/bus
+    http://localhost:8080/api/bus
 
 --JSON PARA REGISTRAR 
 
      {
        "id": "a1",
-      "nombre": "BOGOTA"
+      "placa": "WER25T",
+      "capacidad":"10"
+      
       }
 
 
 --Get Toda la lista
 
-    http://localhost:8080/bus/list
+    http://localhost:8080/api/bus/list
   
 --Get{id}
 
-    http://localhost:8080/bus/id
+    http://localhost:8080/api/bus/id
 
 --Put
 
 
-    http://localhost:8080/bus/actua
+    http://localhost:8080/api/bus/actua
   
   
 --JSON PARA REGISTRAR 
 
-       {
-       "id": "a2",
-      "nombre": "MEDELLI"
+     {
+       "id": "a1",
+      "placa": "WER25T",
+      "capacidad":"10"
       }
   
 --Delete{id}
 
-    http://localhost:8080/bus/id
+    http://localhost:8080/api/bus/id
   
   
   
@@ -82,7 +102,15 @@ RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y mé
 --Post
 
     http://localhost:8080/api/destino
+  
+  
+--JSON PARA REGISTRAR 
 
+       {
+       "id": "a2",
+      "nombre": "MEDELLI"
+      }
+      
 --Get Toda la lista
 
     http://localhost:8080/api/destino/list
@@ -90,6 +118,15 @@ RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y mé
 --Put 
 
     http://localhost:8080/api/destino/actua
+
+  
+--JSON PARA REGISTRAR 
+
+       {
+       "id": "a2",
+      "nombre": "MEDELLI"
+      }
+      
   
 --Delete{id}
 
