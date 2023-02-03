@@ -3,8 +3,7 @@
 
 
 ## Documentación de Proyecto Sistema de Transporte - README.md
-La aplicación Sistema de Trasporte tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero y una clase 
-RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y métodos específicos.
+La aplicación Sistema de Trasporte se desarollo una api en SpringBoot con Representational State Transfer (REST) tendra diferentes componentes, como una clase Bus, una clase Destino, una clase Pasajero y una clase RegistroViaje. Cada uno de estos componentes tendrá sus propias variables y métodos específicos.
 
 La clase Bus almacenará información sobre el bus, como su identificador y sus características. La clase Destino almacenará información sobre el destino, como su id y nombre. La clase Pasajero almacenará información sobre los pasajeros que viajan en el autobús, como su nombre y documento. La clase RegistroViaje será la clase principal de la aplicación y almacenará información sobre el viaje en sí, como la fecha y hora del viaje, el autobús y los pasajeros que viajan en él, se tomaron fecha y hora por aparte por si en algun momento se quiere cambiar la hora de salida del bus no se tenga que cambiar la fecha.
 
