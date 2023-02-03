@@ -1,8 +1,6 @@
 package com.sistematrasporte.Gestionhorario.controller;
 
-import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.Pasajero;
-import com.sistematrasporte.Gestionhorario.repository.PasajeroRepository;
 import com.sistematrasporte.Gestionhorario.service.PasajeroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,9 +15,13 @@ public class PasajeroController {
     @Autowired
     private PasajeroService pasajeroService;
 
+    public PasajeroController(PasajeroService pasajeroService) {
+        this.pasajeroService = pasajeroService;
+    }
+
     @PostMapping
     public ResponseEntity<Pasajero> guardarPasajero(@RequestBody Pasajero pasajero) {
-        pasajeroService.registrarPasajero(pasajero);
+        this.pasajeroService.registrarPasajero(pasajero);
         return new ResponseEntity(HttpStatus.ACCEPTED);
     }
 

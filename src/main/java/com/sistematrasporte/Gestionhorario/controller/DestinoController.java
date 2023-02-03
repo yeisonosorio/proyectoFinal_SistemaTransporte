@@ -17,6 +17,9 @@ public class DestinoController {
     @Autowired
     private DestinoService destinoService;
 
+    public DestinoController(DestinoService destinoService) {
+        this.destinoService = destinoService;
+    }
 
     @PostMapping
     public ResponseEntity<Destino> guardarDestino(@RequestBody Destino destino) {

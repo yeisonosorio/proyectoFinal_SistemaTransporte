@@ -1,5 +1,6 @@
 package com.sistematrasporte.Gestionhorario.service;
 
+import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.Destino;
 import com.sistematrasporte.Gestionhorario.models.RegistroViaje;
 import com.sistematrasporte.Gestionhorario.repository.BusRepository;
@@ -27,6 +28,7 @@ public class DestinoService implements IDestinoService {
     public List<Destino> obtenerTodosLosDestinos() {
         return destinoRepository.getDestinos();
     }
+
 
     @Override
     public void actualizarDestino(Destino destino) {

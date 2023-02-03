@@ -1,10 +1,9 @@
 package com.sistematrasporte.Gestionhorario.repository;
 
-import com.sistematrasporte.Gestionhorario.models.Bus;
 import com.sistematrasporte.Gestionhorario.models.Pasajero;
-import com.sistematrasporte.Gestionhorario.models.Persona;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,6 +15,10 @@ public class PasajeroRepository {
 
     public void registrarPasajero(Pasajero pasajero) {
         pasajeros.add(pasajero);
+    }
+
+    public PasajeroRepository() {
+        this.pasajeros = new ArrayList<>();
     }
 
     public List<Pasajero> getPasajero() {

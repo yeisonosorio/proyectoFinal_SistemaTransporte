@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @RestController
-@RequestMapping("/bus")
+@RequestMapping("api/bus")
 public class BusController {
 
     @Autowired

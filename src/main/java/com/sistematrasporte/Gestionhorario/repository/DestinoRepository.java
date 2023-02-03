@@ -17,8 +17,12 @@ public class DestinoRepository {
     private List<Destino> destinos;
 
 
+    public DestinoRepository() {
+        this.destinos = new ArrayList<>();
+    }
+
     public List<Destino> getDestinos() {
-        return getDestinos();
+        return destinos;
     }
 
     public void registrarDestino(Destino destino) {
