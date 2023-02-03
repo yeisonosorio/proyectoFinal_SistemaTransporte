@@ -13,4 +13,6 @@ public interface IBusService {
     void eliminarBus(String id);
 
     default void actualizarBus(Bus bus){}
+
+    Bus obtenerBusId(String id);
 }

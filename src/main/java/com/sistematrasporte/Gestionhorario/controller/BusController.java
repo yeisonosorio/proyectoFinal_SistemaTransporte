@@ -35,6 +35,15 @@ public class BusController {
         return new ResponseEntity(busService.obtenerBuses(), HttpStatus.FOUND);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Bus> obtenerBusId(@PathVariable("id") String id) {
+        Bus bus = busService.obtenerBusId(id);
+        if (bus == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(bus, HttpStatus.OK);
+    }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminarBus(@PathVariable String id) {

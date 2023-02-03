@@ -37,5 +37,10 @@ public class BusService implements IBusService {
         busRepository.actualizarBus(bus);
     }
 
+    @Override
+    public Bus obtenerBusId(String id) {
+        return busRepository.obtenerBusId(id);
+    }
+
 
 }
