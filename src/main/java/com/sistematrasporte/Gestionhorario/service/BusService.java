@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BusService implements IBusService {
@@ -17,21 +18,24 @@ public class BusService implements IBusService {
 
     @Override
     public List<Bus> obtenerBuses() {
-        return null;
+        return busRepository.getBuses();
     }
 
     @Override
     public void registrarBus(Bus bus) {
+        busRepository.registrarBus(bus);
+    }
 
+
+    @Override
+    public void eliminarBus(String id) {
+        busRepository.eliminarBus(id);
     }
 
     @Override
-    public void modificarBus(Bus bus) {
-
+    public void actualizarBus(Bus bus) {
+        busRepository.actualizarBus(bus);
     }
 
-    @Override
-    public void eliminarBus(String idBus) {
 
-    }
 }

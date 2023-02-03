@@ -32,7 +32,6 @@ public class TerminalTransporteRepository {
 
     public void registrarDestino(Destino destino) {
         destinos.add(destino);
-
     }
 
     public void registrarBus(Bus bus) {
@@ -41,7 +40,6 @@ public class TerminalTransporteRepository {
 
     public void registrarViaje(RegistroViaje registro) {
         registroViajes.add(registro);
-
     }
 
 

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Repository
@@ -25,12 +26,15 @@ public class RegistroViajeRepository {
         registroViajes.add(registroViaje);
     }
 
-    public void eliminarViaje(RegistroViaje registroViaje) {
-        registroViajes.remove(registroViaje);
+    public void eliminarViaje(String id) {
+        registroViajes.remove(id);
     }
 
-    public void actualizarRegistroViaje(RegistroViaje viaje) {
-
+    public void actualizarRegistroViaje(RegistroViaje registroViaje) {
+        registroViajes = registroViajes.stream()
+                .map(r -> r.getId().equals(r.getId()) ? registroViaje : r)
+                .collect(Collectors.toList());
     }
-
 }
+
+

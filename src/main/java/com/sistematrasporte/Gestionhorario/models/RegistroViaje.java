@@ -13,10 +13,8 @@ public class RegistroViaje {
     private String id;
     private Bus bus;
     private Destino destino;
-
     private LocalDate fecha;
     private LocalTime hora;
-
     private List<Pasajero> pasajeros;
 
     public RegistroViaje(String id, Bus bus, Destino destino, LocalDate fecha, LocalTime hora, List<Pasajero> pasajeros) {

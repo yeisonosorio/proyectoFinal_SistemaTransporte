@@ -27,13 +27,13 @@ public class RegistroViajeService implements IRegistroViajeService {
 
 
     @Override
-    public void actualizarRegistroViaje(RegistroViaje viaje) {
-
+    public void actualizarRegistroViaje(RegistroViaje registroViaje) {
+        registroViajeRepository.actualizarRegistroViaje(registroViaje);
     }
 
 
     @Override
-    public void eliminarRegistroViaje(RegistroViaje registroViaje) {
-        registroViajeRepository.eliminarViaje(registroViaje);
+    public void eliminarRegistroViaje(String id) {
+        registroViajeRepository.eliminarViaje(id);
     }
 }

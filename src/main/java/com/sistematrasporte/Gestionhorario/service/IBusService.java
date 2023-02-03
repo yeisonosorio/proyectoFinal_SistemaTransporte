@@ -7,7 +7,10 @@ import java.util.List;
 public interface IBusService {
 
     List<Bus> obtenerBuses();
+
     void registrarBus(Bus bus);
-    void modificarBus(Bus bus);
-    void eliminarBus(String idBus);
+
+    void eliminarBus(String id);
+
+    default void actualizarBus(Bus bus){}
 }
