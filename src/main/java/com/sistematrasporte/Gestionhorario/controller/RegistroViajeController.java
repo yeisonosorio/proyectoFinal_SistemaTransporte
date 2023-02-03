@@ -18,19 +18,18 @@ public class RegistroViajeController {
     private RegistroViajeService registroViajeService;
 
 
-
-
     @PostMapping
     public ResponseEntity<RegistroViaje> guardar(@RequestBody RegistroViaje registroViaje) {
         registroViajeService.registrarViaje(registroViaje);
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
-    /**
-     * @PutMapping("/{id}") public ResponseEntity<RegistroViaje> actualizarViaje( @RequestBody RegistroViaje viaje) {
-     * <p>
-     * }
-     */
+
+    @PutMapping("/actua")
+    public ResponseEntity<Void> actualizarBus(@RequestBody RegistroViaje registroViaje) {
+        registroViajeService.actualizarRegistroViaje(registroViaje);
+        return null;
+    }
 
     @GetMapping("/list")
     public ResponseEntity obtenerTodosLosViajes() {

@@ -14,7 +14,6 @@ public interface IRegistroViajeService {
 
     void actualizarRegistroViaje(RegistroViaje viaje);
 
-
     void eliminarRegistroViaje(String id);
 
     Bus obtenerRegistroViajeId(String id);

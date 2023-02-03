@@ -9,8 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-public class DestinoController {
 
+@RestController
+@RequestMapping("/api/destino")
+public class DestinoController {
 
     @Autowired
     private DestinoService destinoService;
@@ -29,13 +31,13 @@ public class DestinoController {
 
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarPasajero(@PathVariable String id) {
+    public ResponseEntity<Void> eliminarDestino(@PathVariable String id) {
         destinoService.eliminarDestino(id);
         return null;
     }
 
     @PutMapping("/actua")
-    public ResponseEntity<Void> actualizarPasajero(@RequestBody Destino destino) {
+    public ResponseEntity<Void> actualizarDestino(@RequestBody Destino destino) {
         destinoService.actualizarDestino(destino);
         return null;
     }
